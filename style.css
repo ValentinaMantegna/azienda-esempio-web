@@ -1,7 +1,16 @@
+body{
+    margin: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    background-color: white;
 }
 
 .navlink a {
@@ -23,6 +32,7 @@ nav {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin:20px;
 }
   
 article {
@@ -70,7 +80,7 @@ header div {
 
 header div {
     position: absolute;
-    background-color: hsl(277deg 35% 96% / 0%);
+    background-color: #f6f1f84f;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -84,7 +94,40 @@ header div {
     text-transform: uppercase;
 }
 
+#chi-siamo img {
+    width: 360px;
+}
+.clear {
+    clear:both;
+}
 
+#progetti{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+.card-wrapper img {
+    position:relative;
+}
+car.header-prj h3 {
+    position:absolute
+    top :50%
+    left: 50%
+    transform: translate (-50% -50%)
+    color: white
+     
+}
+.card-profilo img {
+    border: radius 50%;
+}
+.card-div {
+    width:100%
+}
+
+.card-profilo {
+    border-radius: 50%;
+    height: 100px;
+}
 /*
 tutti i link di colore nero (esadecimale)
 tutti i link non hanno sottolineatura
